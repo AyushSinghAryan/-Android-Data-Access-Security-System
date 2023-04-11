@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/textSizeInButton">
+
+                <TextView
+                    android:id="@+id/txtEid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="18dp"
+                    android:padding="8dp"
+                    android:text="Eid:"
+                    android:textColor="#1e1e1e"
+                    android:textSize="@dimen/textSizeInButton" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="18dp"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Type:"
+                        android:textColor="#1e1e1e"
+                        android:textSize="@dimen/textSizeInButton" />
+
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="18dp"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Status:"
+                        android:textColor="#1e1e1e"
+                        android:textSize="@dimen/textSizeInButton" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtDT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="18dp"
+                    android:padding="8dp"
+                    android:text="Date &amp; Time:"
+                    android:textColor="#1e1e1e"
+                    android:textSize="@dimen/textSizeInButton" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

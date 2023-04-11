@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rlMainAddUser"
+    tools:context=".activity.AddUserActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/llAddUserBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:padding="@dimen/main_layout_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layoutContentPadding"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_style"
+            android:hint="Name"
+            android:inputType="text"
+            android:padding="@dimen/layoutContentPadding"
+            android:textColorHint="@color/black" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layoutContentPadding"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_style"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/layoutContentPadding"
+            android:textColorHint="@color/black" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layoutContentPadding"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_style"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="@dimen/layoutContentPadding"
+            android:textColorHint="@color/black" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layoutContentPadding"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_style"
+            android:hint="Department"
+            android:inputType="text"
+            android:padding="@dimen/layoutContentPadding"
+            android:textColorHint="@color/black" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layoutContentPadding"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_style"
+            android:hint="Enter Password"
+            android:inputType="textVisiblePassword"
+            android:padding="@dimen/layoutContentPadding"
+            android:textColorHint="@color/black" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegisterUser"
+        style="@style/button_gradient"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="@dimen/main_layout_padding"
+        android:text="Register User" />
+
+</RelativeLayout>
